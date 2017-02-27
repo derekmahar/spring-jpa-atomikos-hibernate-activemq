@@ -11,7 +11,7 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 @Configuration
-@EnableJpaRepositories(basePackages="me.derekmahar.example.spring.repository")
+@EnableJpaRepositories(basePackages = "me.derekmahar.example.spring.repository")
 public class JpaConfiguration {
 
 	@Autowired
@@ -27,8 +27,8 @@ public class JpaConfiguration {
 		entityManagerFactory.setJpaProperties(this.hibernateProperties.getProperties());
 		return entityManagerFactory;
 	}
-	
-		@Bean
+
+	@Bean
 	public JpaVendorAdapter hibernateJpaVendorAdapter() {
 		final HibernateJpaVendorAdapter jpaAdapter = new HibernateJpaVendorAdapter();
 		jpaAdapter.setShowSql(true);
