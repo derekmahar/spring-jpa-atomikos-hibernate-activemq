@@ -46,6 +46,7 @@ public class ApplicationEnvironment implements
 				getPropertyName());
 	}
 
+	@Override
 	public String getJdbcDataSourceClassName() {
 		return this.applicationEnvironment.getProperty(ApplicationPropertyName.JDBC_DATA_SOURCE_CLASS_NAME.
 				getPropertyName());
