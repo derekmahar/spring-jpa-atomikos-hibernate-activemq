@@ -7,6 +7,7 @@ public interface ApplicationPropertiesSource {
 	String getJdbcConnectionServerName();
 	String getJdbcConnectionUrl();
 	String getJdbcConnectionUserName();
+	String getJdbcDataSourceClassName();
 	String getJmsBrokerPassword();
 	String getJmsBrokerUrl();
 	String getJmsBrokerUserName();

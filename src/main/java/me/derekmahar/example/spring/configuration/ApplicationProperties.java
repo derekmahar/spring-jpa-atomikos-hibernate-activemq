@@ -46,6 +46,12 @@ public class ApplicationProperties implements ApplicationPropertiesSource {
 	}
 
 	@Override
+	public String getJdbcDataSourceClassName() {
+		return this.applicationProperties.getProperty(ApplicationPropertyName.JDBC_DATA_SOURCE_CLASS_NAME.
+				getPropertyName());
+	}
+
+	@Override
 	public String getJmsBrokerPassword() {
 		return this.applicationProperties.
 				getProperty(ApplicationPropertyName.JDBC_CONNECTION_PASSWORD.getPropertyName());

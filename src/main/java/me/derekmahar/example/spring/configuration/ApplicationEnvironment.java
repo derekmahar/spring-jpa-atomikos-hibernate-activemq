@@ -46,6 +46,11 @@ public class ApplicationEnvironment implements
 				getPropertyName());
 	}
 
+	public String getJdbcDataSourceClassName() {
+		return this.applicationEnvironment.getProperty(ApplicationPropertyName.JDBC_DATA_SOURCE_CLASS_NAME.
+				getPropertyName());
+	}
+
 	@Override
 	public String getJmsBrokerPassword() {
 		return this.applicationEnvironment.getProperty(ApplicationPropertyName.JDBC_CONNECTION_PASSWORD.
